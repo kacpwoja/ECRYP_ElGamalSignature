@@ -1,11 +1,17 @@
 import elgamal
 from hashlib import sha256
 
+""" Testing the elgamal module """
+
 if __name__ == "__main__":
+    # Documents to sign
     msgs = ["ECRYP", "kwojakow", "ElGamal Digital Signature", "lorem ipsum", "dorime interimo adapare dorime ameno ameno latire latiremo dorime"]
+    # Hash function
     hfun = sha256()
+    # Bit Length
     N = 32
 
+    # Testing the signatures for the documents
     for msg in msgs:
         print("Message:")
         print(msg)
